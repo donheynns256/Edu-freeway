@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Advanced Calculator By Israek Tek</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator">
+     <marquee><p>CALCULATOR By Emma and Donor. Thank you for supporting ♥️ us. Call or Whatsapp +256 756 272820 or +256 709956125 for more apps.WE SHALL CONTINUE DEVELOPING OUR CALCULATOR APP TO IMPROVE USER EXPERIENCE</p></marquee>
+        <input type="text" id="display" disabled>
+        <div class="buttons">
+            <button onclick="clearDisplay()">C</button>
+            <button onclick="deleteLast()">DEL</button>
+             <button onclick="calculatePower()">x²</button>  
+    <!-- removing pie to fit everything-->
+            <button onclick="calculateSquareRoot()">√</button>
+            <button onclick="calculateLog()">log</button>
+            <button onclick="calculateSin()">sin</button>
+            <button onclick="calculateCos()">cos</button>
+            <button onclick="calculateTan()">tan</button>
+            
+            <button onclick="debouncedAppendCharacter('7')">7</button>
+            <button onclick="debouncedAppendCharacter('8')">8</button>
+           <button onclick="debouncedAppendCharacter('9')">9</button> 
+            <button onclick="debouncedAppendCharacter('*')" class="sign">*</button>
+            <button onclick="debouncedAppendCharacter('4')">4</button>
+            <button onclick="debouncedAppendCharacter('5')">5</button>
+            <button onclick="debouncedAppendCharacter('6')">6</button>
+            <button onclick="debouncedAppendCharacter('-')" class="sign">-</button>
+            <button onclick="debouncedAppendCharacter('1')">1</button>
+            <button onclick="debouncedAppendCharacter('2')">2</button>
+            <button onclick="debouncedAppendCharacter('3')">3</button>  
+           <button onclick="debouncedAppendCharacter('+')" class="sign">+</button> 
+           <button onclick="debouncedAppendCharacter('0')" class="zero">0</button> 
+            <button onclick="debouncedAppendCharacter('.')">.</button>
+            <button  onclick="debouncedAppendCharacter('/')" class="sign">/</button>
+            <button onclick="calculateResult()" class="equals">=</button> 
+                         
+        </div>
+        <h3 class="hidden"> Calculation History</h3> <!--calculation history hidden-->
+        <u1 id="history" class="hidden"></u1>
+    <!--calculation history hidden for better usage
+        <button onclick="toggleConverter()">Toggle Converter</button>
+        <div id="converter" class="hidden">
+            <input type="text" id="amount" placeholder="Amount">
+            <select id="currencyFrom">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="GBP">GBP</option>
+                <option value="UGX">UGX</option>
+            </select>
+            <select id="currencyTo">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="GBP">GBP</option>
+                <option value="UGX">UGX</option>
+            </select>
+            <button onclick="convertCurrency()">Convert</button>
+            <p id="conversionResult"></p>
+            -->
+        </div>
+    </div>
+    <!-- Developed by Asobola Donor Israel email: asoboladonor@gmail.com tel:+256756272820-->
+
+    <script src="script.js"></script>
+</body>
+</html>

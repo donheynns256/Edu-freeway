@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1a1a1a; /* Dark grey background */
+    margin-top: 20; /* Remove default margin */
+}
+
+.calculator {
+    width: 400px; /* Adjusted width */
+    padding: 20px;
+    positioning: absolute;
+    margin-top: 
+    background-color: #2b2b2b; /* Slightly lighter dark grey */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    overflow: visible; /* Prevent overflow of elements */
+}
+.calculator h1,p{
+    color:#ff9800;
+    line-spacing: 5px;
+}
+#display {
+    align: center;
+    width: 300px;
+    height: 80px;
+    background-color: #121212; /* Darker display background */
+    color: #ff9800; /* Orange text for the display */
+    text-align: right;
+    font-size: 28px;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5); /* Inner shadow for depth */
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+button {
+    padding: 20px;
+    background-color: #333; /* Button dark grey */
+    color: white;
+    border: none;
+    border-radius: 15px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease; /* Transition for smoother animations */
+}
+
+button:hover {
+   /* background-color: ; /* Orange hover effect  #ff9800*
+    color: #fff;*/
+}
+
+button:active {
+  /*  transform: scale(0.95);  Slightly scale down when pressed */
+}
+
+.zero {
+    grid-column: span 2;
+}
+.equals{
+    grid-column: span 4;
+    background-color: orange;
+    boarder-radius: 0px;
+}
+.sign{
+    background-color: #ff9800;
+}
+.hidden {
+    display: none; /* Hide the converter by default */
+}
+
+h3 {
+    color: #ff9800; /* Orange color for headings */
+}
+
+#converter {
+    margin-top: 20px; /* Space above converter */
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#converter input,
+#converter select {
+    width: calc(100% - 10px);
+    margin: 5px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #222;
+    color: #fff;
+}
+/*Developed By Asobola Donor and Kasirivu Emmanuel. property of Israel tek and kesemmtech*/
